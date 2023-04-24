@@ -1,0 +1,50 @@
+{
+    "Navbar": {
+        "menu": "Menú",
+        "mapa": "Ver Mapa",
+        "contacto": "Contacto"
+    },
+    "Mapa": {
+        "Sucursal_01": "Sucursal Centro",
+        "Numero_01": "+56 9 7685 7550",
+        "NumeroWSP_01": "56976857550",
+        "Direccion_01": "3 Norte 1609 entre 9 y 10 Oriente",
+        "Sucursal_02": "Sucursal Sur",
+        "Numero_02": "+56 9 6734 1133",
+        "NumeroWSP_02": "56967341133",
+        "Direccion_02": "18 Sur 3 Oriente 910",
+        "Sucursal_03": "Sucursal Oriente",
+        "Numero_03": "+56 9 6461 5308",
+        "NumeroWSP_03": "56964615308",
+        "Direccion_03": "5 Norte 5041"
+    },
+    "Home": {
+
+    },
+    "Footer": {
+        "Menu": "Menu",
+        "Sucursales": "Sucursales",
+        "Siguenos": "Siguenos",
+        "Contacto": "Contacto",
+        "Copyright": "Copyright ©",
+        "Politica": "Politica de Privacidad",
+        "Cookies": "Cookies"
+    },
+    "ModalFooter": {
+        "Title_01": "Contacto",
+        "Sucursal_01": "Sucursal Centro",
+        "Numero_01": "+56 9 7685 7550",
+        "Direccion_01": "3 Norte 1609 entre 9 y 10 Oriente",
+        "Sucursal_02": "Sucursal Sur",
+        "Numero_02": "+56 9 6734 1133",
+        "Direccion_02": "18 Sur 3 Oriente 910",
+        "Sucursal_03": "Sucursal Oriente",
+        "Numero_03": "+56 9 6461 5308",
+        "Direccion_03": "5 Norte 5041",
+        "Correo": "drojasrestomaky@gmail.com",
+        "Title_02": "Siguenos !",
+        "Redes_01": "@RestoMaky",
+        "Redes_02": "@SushiMakyTalca",
+        "Boton": "Cerrar"
+    }
+}
