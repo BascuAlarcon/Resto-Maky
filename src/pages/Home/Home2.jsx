@@ -21,6 +21,7 @@ function CarouselFadeExample() {
   return (
     <>
       <div className='container-home mt-2 mb-2'>
+        <h1 className='text-light'>Galería de fotos</h1>
         <div className='img-container'>
           <div className='container-img-individual'><img onClick={() => openModalImg('Maky 2', '10 Tempura C – 5 Ciboulette – 5 Sésamo – 5 Nori', '_Maky_2-min.JPG')} className='img-menu-home' src={require('../../assets/img/home/_Maky_2-min.JPG')} alt="" /></div>
           <div className='container-img-individual'><img onClick={() => openModalImg('Maky 3', '10 Tempura A – 10 Nori – 5 Sésamo – 5 Nori', '_Maky_3-min.JPG')} className='img-menu-home' src={require('../../assets/img/home/_Maky_3-min.JPG')} alt="" /></div>
@@ -50,13 +51,13 @@ function CarouselFadeExample() {
         <Modal.Header closeButton>
           <Modal.Title id="example-modal-sizes-title-lg">
             <h4 className='title-modal-home'>Menú Maky</h4>
-            <h4 className='title-modal-home'>{title}</h4>
+            <h4 className='subtitle-modal-home'>{title}</h4>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {/* <img className='img-modal-home' src={require('../../assets/img/home/_Maky_2-min.JPG')} alt="" />  */}
           <img className='img-modal-home' src={require(`../../assets/img/home/${imagen}`)} alt="" /> 
-          <h5 className='description-modal-home'>{description}</h5>
+          <h5 className='description-modal-home mt-3'>{description}</h5>
         </Modal.Body>
       </Modal>
     </>

@@ -29,7 +29,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
 
   return (
     <>
-     <nav className='navbar navbar-expand-lg navbar-light navbar-modified'> 
+     <nav className='navbar navbar-expand-lg navbar-dark navbar-modified'> 
       <Link className="navbar-brand" to="/" onClick={closeNavbarCollapse}>
         <div className="logo-image ml-4">
               <img src={require('../../assets/img/MAKY_RESTO__SUSHI_transparente.png')} className="img-fluid ml-1" alt='SushiMakyLogo'/>
