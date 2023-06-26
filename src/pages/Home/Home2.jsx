@@ -1,7 +1,19 @@
  
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import styled from 'styled-components';
+
+const CarouselImg = styled.img` 
+width: 90%;
+height: auto; 
+opacity: 0;
+transition: 1s;
+margin: 10px;
+&.loaded {
+  opacity: 1;
+}
+`
 
 function CarouselFadeExample() {
  
@@ -18,9 +30,59 @@ function CarouselFadeExample() {
     setLgShow(true);
   }
 
+  const images = ['carousel01.png', 'carousel02.png', 'carousel03.png', 'carousel04.png']
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedImage, setSelectedImage] = useState(images[0]);
+  const [loaded, setLoaded] = useState(false);
+ 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      selectNewImage(selectedIndex, images);
+    }, 5000);
+  
+    return () => {
+      clearInterval(interval);
+    }
+  });
+
+  const selectNewImage = (index, images, next = true) => {
+    setLoaded(false);
+    setTimeout(() => {
+      const condition = next ? selectedIndex < images.length - 1: selectedIndex > 0;
+      const nextIndex = next 
+        ? condition ? selectedIndex + 1 : 0
+        : condition ? selectedIndex - 1 : images.length - 1
+      setSelectedImage(images[nextIndex]);
+      setSelectedIndex(nextIndex);
+    }, 500) 
+  }
+
+  const previous = () => {
+    selectNewImage(selectedIndex, images, false)
+  }
+  
+  const next = () => {
+    selectNewImage(selectedIndex, images)
+  } 
+
   return (
     <>
       <div className='container-home mt-2 mb-2'>
+        <div className="carousel-container">
+        <CarouselImg 
+
+          src={require(`./../../assets/img/${selectedImage}`)} 
+          alt="Sushi" 
+          className={loaded ? "loaded" : ""} 
+          onLoad={() => setLoaded(true)}/>  
+          <div className="carousel-container-text">
+            <p className='mt-5'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+            <p className='mt-5'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+            <p className='mt-5'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+            <p className='mt-5'>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+          </div>
+        </div>
+
         <h1 className='text-light'>Galería de fotos</h1>
         <div className='img-container'>
           <div className='container-img-individual'><img onClick={() => openModalImg('Maky 2', '10 Tempura C – 5 Ciboulette – 5 Sésamo – 5 Nori', '_Maky_2-min.JPG')} className='img-menu-home' src={require('../../assets/img/home/_Maky_2-min.JPG')} alt="" /></div>

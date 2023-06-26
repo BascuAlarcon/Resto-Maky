@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 import { Link } from 'react-router-dom';
 import DB_Text from '../../assets/texts/DB_Texts.json'
-import { faWhatsapp, faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faInstagram, faFacebook, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import { faDirections, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Modal, Button } from 'react-bootstrap';
@@ -43,12 +43,19 @@ const Navbar: React.FC<NavbarInterface> = () => {
           <li className='nav-item'>
             <a target="_blank" className='nav-link' onClick={closeNavbarCollapse} href={require('../../assets/texts/Carta_SushiMaky.pdf')} rel="noreferrer">{DB_Text.Navbar.menu}</a>         
           </li>
-          <li className='nav-item'>
+          {/* <li className='nav-item'>
             <Link to="/sucursales" className='nav-link' onClick={closeNavbarCollapse}>{DB_Text.Navbar.mapa}</Link>        
-          </li> 
+          </li>  */}
           <li className='nav-item'>
+			<a onClick={closeNavbarCollapse} href="#mapa" className='nav-link'>Mapa</a> 
+          </li>  
+          <li className='nav-item'>
+			<a onClick={closeNavbarCollapse} href="#galeria" className='nav-link'>Galeria</a> 
+          </li>  
+          <li className='nav-item'>
+			{/* <a onClick={handleShow} href="#mapa" className='nav-link'>Contacto</a> */}
             <Link onClick={handleShow} to="/#" className='nav-link'>{DB_Text.Navbar.contacto}</Link>        
-          </li> 
+          </li>  
         </ul>
       </div>
      </nav>
@@ -80,6 +87,11 @@ const Navbar: React.FC<NavbarInterface> = () => {
 					<div className='divModalBody'>
 						<a href='https://www.facebook.com/sushimakytalca/' className='disabledAnchorDark'><FontAwesomeIcon icon={faFacebook} style={{color: 'blue'}} size="2x" className='iconsModal'/></a> 
 						<a href='https://www.facebook.com/sushimakytalca/' className='disabledAnchorDark'>{ DB_Text.ModalFooter.Redes_02 }</a>
+					</div>
+					<div className='divModalBody'>
+						<a href='https://www.tiktok.com/@makyresto/' className='disabledAnchorDark mr-1'><FontAwesomeIcon icon={faTiktok} style={{ color: 'black' }} size="2x" className='iconsModal' /></a>
+						<a href='https://www.facebook.com/sushimakytalca/' className='disabledAnchorDark'>@MakyResto</a>
+
 					</div>
 				</Modal.Body> 
 				<Modal.Footer>

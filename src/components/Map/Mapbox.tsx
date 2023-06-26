@@ -7,7 +7,8 @@ import DB_Text from '../../assets/texts/DB_Texts.json'
 
 
 const containerStyle = { 
-  height: 'auto', 
+  height: '100%', 
+  width: '100%', 
 }; 
 
 const directions = ['south', 'east', 'center']  
@@ -127,17 +128,17 @@ const MapboxMap: React.FC<MapInterface> = () => {
             {/* <div className='col-2 div-sucursales d-flex flex-column bg-dark justify-content-center align-items-center'> */}
             <div className='button-container'>
                 <div className='button-container-sucursal-lg'>
-                    <a className='button-sucursal-unmarked' id='east' href='#' onClick={() => flyToMarker('east')}   >
+                    <a className='button-sucursal-unmarked' id='east'   onClick={() => flyToMarker('east')}   >
                         <h2 id='h2-east' className='title-container-unmarked'>{DB_Text.Mapa.Sucursal_03}</h2>
                         <p id='p-east' className='p-container-unmarked'>{DB_Text.Mapa.Direccion_03}</p>
                         <p id='p2-east' className='p-container-unmarked'>{DB_Text.Mapa.Numero_03}</p>
                     </a>
-                    <a className='button-sucursal' id='center' href='#' onClick={() => flyToMarker('center')} >
+                    <a className='button-sucursal' id='center'   onClick={() => flyToMarker('center')} >
                         <h2 id='h2-center' className='title-container-marked'>{DB_Text.Mapa.Sucursal_01}</h2>
                         <p id='p-center' className='p-container-marked'>{DB_Text.Mapa.Direccion_01}</p>
                         <p id='p2-center' className='p-container-marked'>{DB_Text.Mapa.Numero_01}</p>
                     </a>
-                    <a className='button-sucursal-unmarked' id='south' href='#' onClick={() => flyToMarker('south')}  >
+                    <a className='button-sucursal-unmarked' id='south'  onClick={() => flyToMarker('south')}  >
                         <h2 id='h2-south' className='title-container-unmarked'>{DB_Text.Mapa.Sucursal_02}</h2>
                         <p id='p-south' className='p-container-unmarked'>{DB_Text.Mapa.Direccion_02}</p>
                         <p id='p2-south' className='p-container-unmarked'>{DB_Text.Mapa.Numero_02}</p>
@@ -149,14 +150,16 @@ const MapboxMap: React.FC<MapInterface> = () => {
                             {texto}
                         </button>  
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" onClick={() => flyToMarker('center')} href="#" id="Marina-Arauco">Sucursal Centro</a></li>
-                            <li><a className="dropdown-item" onClick={() => flyToMarker('east')} href="#" id="Paseo-Ross">Sucursal Oriente</a></li>
-                            <li><a className="dropdown-item" onClick={() => flyToMarker('south')} href="#" id="Plaza-del-Sol">Sucursal Sur</a></li>
+                            <li><a className="dropdown-item" onClick={() => flyToMarker('center')}  id="Marina-Arauco">Sucursal Centro</a></li>
+                            <li><a className="dropdown-item" onClick={() => flyToMarker('east')}  id="Paseo-Ross">Sucursal Oriente</a></li>
+                            <li><a className="dropdown-item" onClick={() => flyToMarker('south')}  id="Plaza-del-Sol">Sucursal Sur</a></li>
                         </ul>
                     </div> 
                 </div> 
             </div> 
-            <div className='map-container' ref={mapDiv} style={containerStyle}></div> 
+            <div className="mapContainer">
+                <div className='map-container' ref={mapDiv} style={containerStyle}></div> 
+            </div>
             <a href={'https://wa.me/'+numeroWsp}><FontAwesomeIcon icon={faWhatsapp} className='btn-wsp'/></a>
 
             <div className='button-container'>
