@@ -75,9 +75,9 @@ function CarouselFadeExample() {
     <>
       <div className='container-home mb-2'>
         <div className="inicioContainer">
-          <img className='img-inicio' src={require('../../assets/img/home/Screenshot_1.png')} />
-          <img className='img-inicio' src={require('../../assets/img/home/Screenshot_2.png')} />
-          <img className='img-inicio' src={require('../../assets/img/home/Screenshot_3.png')} />
+          <img className='img-inicio' src={require('../../assets/img/home/portada.png')} /> 
+          <img className='img-inicio-mobile' src={require('../../assets/img/home/portada_01.png')} /> 
+          <img className='img-inicio-mobile' src={require('../../assets/img/home/portada_02.png')} /> 
 
         </div>
         <div className="carousel-container">
@@ -99,15 +99,18 @@ function CarouselFadeExample() {
               <p className='texto-titulo-inicio '>Resto Maky</p>
               <p className='texto-sin-margen ml-5 mr-5 '>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
             </div>
-            <div className='container-textos-inicio'>
-              <p className='texto-titulo-inicio'>Nuestro Menú</p>
-              <p className='texto-sin-margen'>Descubre las distintas variedades y promociones</p>
-              <button className='btn btn-dark text-white button-inicio'>Ver Carta</button>
+            <div className="containerMenuPedidoHome">
+              <div className='container-textos-inicio'>
+                <p className='texto-titulo-inicio'>Nuestro Menú</p>
+                <p className='texto-sin-margen'>Descubre las distintas variedades y promociones</p>
+                <button className='btn btn-dark text-white button-inicio'>Ver Carta</button>
+              </div>
+              <div className='container-textos-inicio'>
+                <p className='texto-titulo-inicio'>Hacer pedidor</p>
+                <p className='texto-sin-margen mt-0'>No esperes más y ponte en contacto con nosotros</p>
+                <button className='btn btn-dark text-white button-inicio'>Contacto</button>            
+              </div>
             </div>
-            <div className='container-textos-inicio'>
-              <p className='texto-titulo-inicio'>Hacer pedidor</p>
-              <p className='texto-sin-margen mt-0'>No esperes más y ponte en contacto con nosotros</p>
-              <button className='btn btn-dark text-white button-inicio'>Contacto</button>            </div>
             <div className='container-textos-inicio'>
               <p className='texto-titulo-inicio'>Horario de atención</p>
               <h5 className='texto-sin-margen h5-Default text-dark'>De lunes a Miercoles: 12:45pm - 22:00pm</h5>
@@ -115,72 +118,68 @@ function CarouselFadeExample() {
               <h5 className='texto-sin-margen h5-Default text-dark'>Domingo: 12:15pm - 22:15pm</h5>
             </div>
             </div>
-        </div>
+        </div> 
 
-        <div className="container-title-inicio-primero"> 
-          O
-        </div>
+        <div className="container-right"> 
+          <div className="carousel-container-right">
+            <CarouselImg  
+              src={require(`./../../assets/img/${selectedImage}`)} 
+              alt="Sushi" 
+              id="carouselImg"
+              className={loaded ? "loaded" : ""} 
+              onLoad={() => setLoaded(true)}/>  
 
-        <div className="carousel-container-right">
-          <CarouselImg  
-            src={require(`./../../assets/img/${selectedImage}`)} 
-            alt="Sushi" 
-            id="carouselImg"
-            className={loaded ? "loaded" : ""} 
-            onLoad={() => setLoaded(true)}/>  
-
-          <div className="carousel-container-text mt-5" id='galeria'> 
-            <h1>Nuestras reseñas!</h1>
-            <div className="container-comentario"> 
-              <span className='container-star'>
-                <p className='texto-sin-margen texto-inicio-nombre'>Natalia Figeroa</p>
-                <p className='texto-sin-margen texto-inicio-fecha'>Hace 9 meses</p>
-                <div className="container-estrellas">
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                </div>
-              </span> 
-              <p className='texto-sin-margen texto-inicio-comentario'>En cuanto al local del centro es maravilloso, siempre ricos, buena atención siempre y cuando me llegan a la casa envían muchos palitos y mucha soya, ya que un día se les pasó enviarme los insumos, pero como tenía más no hay problema, además cuando pido cambiar la envoltura de sésamo x ciboulette siempre me lo cambian, la demora es la normal, ni un problema hasta el momento, los repartidores muy amables siempre.</p>
+            <div className="carousel-container-text mt-4" id='galeria'> 
+              <h1 className='titleReseñas'>Nuestras reseñas!</h1>
+              <div className="container-comentario"> 
+                <span className='container-star'>
+                  <p className='texto-sin-margen texto-inicio-nombre'>Natalia Figeroa</p>
+                  <p className='texto-sin-margen texto-inicio-fecha'>Hace 9 meses</p>
+                  <div className="container-estrellas">
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                  </div>
+                </span> 
+                <p className='texto-sin-margen texto-inicio-comentario'>En cuanto al local del centro es maravilloso, siempre ricos, buena atención siempre y cuando me llegan a la casa envían muchos palitos y mucha soya, ya que un día se les pasó enviarme los insumos, pero como tenía más no hay problema, además cuando pido cambiar la envoltura de sésamo x ciboulette siempre me lo cambian, la demora es la normal, ni un problema hasta el momento, los repartidores muy amables siempre.</p>
+              </div>
+              <div className="container-after"></div>
+              <div className="container-comentario"> 
+                <span className='container-star'>
+                  <p className='texto-sin-margen texto-inicio-nombre'>Claudia Rivera Mora</p>
+                  <p className='texto-sin-margen texto-inicio-fecha'>Hace una semana atras</p>
+                  <div className="container-estrellas">
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                  </div>
+                </span> 
+                <p className='texto-sin-margen texto-inicio-comentario'>Me gusta mucho ir, el sushi es rico, la atención al cliente es muy buena y el pedido sale rápido. Tienen tele y es lo mejor jaja (no tengo tv en la casa)</p>
+              </div>
+              <div className="container-after"></div>
+              <div className="container-comentario"> 
+                <span className='container-star'>
+                  <p className='texto-sin-margen texto-inicio-nombre'>Carolina Rojas</p>
+                  <p className='texto-sin-margen texto-inicio-fecha'>Hace un año</p>
+                  <div className="container-estrellas">
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                    <img src={require(`./../../assets/img/star.png`)}  alt="" />
+                  </div>
+                </span> 
+                <p className='texto-sin-margen texto-inicio-comentario'>Exquisito, productos frescos, precios muy asequibles, opciones veganas y vegetarianas. Así que 100% recomendable.</p>
+              </div>
+              
             </div>
-            <div className="container-comentario"> 
-              <span className='container-star'>
-                <p className='texto-sin-margen texto-inicio-nombre'>Claudia Rivera Mora</p>
-                <p className='texto-sin-margen texto-inicio-fecha'>Hace una semana atras</p>
-                <div className="container-estrellas">
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                </div>
-              </span> 
-              <p className='texto-sin-margen texto-inicio-comentario'>Me gusta mucho ir, el sushi es rico, la atención al cliente es muy buena y el pedido sale rápido. Tienen tele y es lo mejor jaja (no tengo tv en la casa)</p>
-            </div>
-            <div className="container-comentario"> 
-              <span className='container-star'>
-                <p className='texto-sin-margen texto-inicio-nombre'>Carolina Rojas</p>
-                <p className='texto-sin-margen texto-inicio-fecha'>Hace un año</p>
-                <div className="container-estrellas">
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                  <img src={require(`./../../assets/img/star.png`)}  alt="" />
-                </div>
-              </span> 
-              <p className='texto-sin-margen texto-inicio-comentario'>Exquisito, productos frescos, precios muy asequibles, opciones veganas y vegetarianas. Así que 100% recomendable.</p>
-            </div>
-           </div>
+          </div> 
         </div>
-        <div className="container-title-inicio-galeria"  >
-          <h1 className='title-inicio-galeria'>Descubre nuestras sucursales!</h1>
-        </div>
-        <div className='containerMap'  id='mapa'>
-          <MapboxMap/>
-        </div>
+         
 
         <div className="container-title-inicio-galeria">
           <h1 className='title-inicio-galeria'>Galería de fotos</h1>
@@ -210,6 +209,13 @@ function CarouselFadeExample() {
           <div className='container-img-individual'><img onClick={() => openModalImg('Tempuras 60', '30 Tempura A/B/C – 10 Ciboulette – 10 Sésamo – 10 Nori', '_Tempuras_60-min.JPG')} className='img-menu-home' src={require('../../assets/img/home/_Tempuras_60-min.JPG')} alt="" /></div>
         </div>
       </div>  
+
+      <div className="container-title-inicio-galeria mt-3 mb-2"  >
+          <h1 className='title-inicio-galeria'>Descubre nuestras sucursales!</h1>
+        </div>
+        <div className='containerMap'  id='mapa'>
+          <MapboxMap/>
+        </div>
       
       <Modal 
         show={lgShow}
