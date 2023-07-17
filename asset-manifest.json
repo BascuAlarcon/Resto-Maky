@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Resto-Maky/static/css/main.d6fa7a6f.css",
-    "main.js": "/Resto-Maky/static/js/main.9fb3ca0e.js",
+    "main.css": "/Resto-Maky/static/css/main.0ee7ab89.css",
+    "main.js": "/Resto-Maky/static/js/main.3b27f0e8.js",
     "static/media/Carta_SushiMaky.pdf": "/Resto-Maky/static/media/Carta_SushiMaky.a9a769a973609a8e872d.pdf",
     "static/media/vid.mp4": "/Resto-Maky/static/media/vid.2b829ac93a0692e10ee1.mp4",
     "static/media/_Tempura_vegetariano-min.png": "/Resto-Maky/static/media/_Tempura_vegetariano-min.af7e58af01920ac976fe.png",
@@ -43,11 +43,11 @@
     "static/media/MAKY_RESTO__SUSHI_transparente.png": "/Resto-Maky/static/media/MAKY_RESTO__SUSHI_transparente.b1bfabeb3e05289f1b6d.png",
     "static/media/recortedlogo2.png": "/Resto-Maky/static/media/recortedlogo2.7c3bd9079f6b93e095b6.png",
     "index.html": "/Resto-Maky/index.html",
-    "main.d6fa7a6f.css.map": "/Resto-Maky/static/css/main.d6fa7a6f.css.map",
-    "main.9fb3ca0e.js.map": "/Resto-Maky/static/js/main.9fb3ca0e.js.map"
+    "main.0ee7ab89.css.map": "/Resto-Maky/static/css/main.0ee7ab89.css.map",
+    "main.3b27f0e8.js.map": "/Resto-Maky/static/js/main.3b27f0e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6fa7a6f.css",
-    "static/js/main.9fb3ca0e.js"
+    "static/css/main.0ee7ab89.css",
+    "static/js/main.3b27f0e8.js"
   ]
 }
