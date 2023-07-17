@@ -27,9 +27,9 @@ function CarouselFadeExample() {
   const [lgShow, setLgShow] = useState(false);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [imagen, setImagen] = useState('_Maky_2-min.png');
+  const [imagen, setImagen] = useState('Maky2.png');
 
-  console.log('prueba 03')
+  console.log('prueba 04')
 
   const openModalImg = (title, description, imagen) => { 
     setTitle(title);
@@ -189,37 +189,23 @@ function CarouselFadeExample() {
           <h1 className='title-inicio-galeria mt-3'>Galería de fotos</h1>
         </div>
         <div className='img-container'>
-          <div className='container-img-individual'>
-            <img className='img-menu-home' src={require('./../../assets/img/home/_Maky_2-min.png')} alt="" />
-          </div>
-          <div className='container-img-individual'>
-            <img onClick={() => openModalImg('Maky 3', '10 Tempura A – 10 Nori – 5 Sésamo – 5 Nori', 'Maky3.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky3.png')} alt=""/>
-          </div>
-          <div className='container-img-individual'>
-            <img onClick={() => openModalImg('Maky 4', '10 Tempura A  10 Tempura B  10 Nori   5 Sésamo  5 Ciboulette', '_Maky_4-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Maky_4-min.png')} alt="" />
-          </div>
-          <div className='container-img-individual'>
-            <img onClick={() => openModalImg('Maky 5', '10 Tempura A – 10 Tempura B – 10 Queso Crema - 10 Nori – 5 Sésamo – 5 Ciboulette', '_Maky_5_v2-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Maky_5_v2-min.png')} alt="" />
-          </div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 2', '10 Tempura C – 5 Ciboulette – 5 Sésamo – 5 Nori', 'Maky2.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky2.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 3', '10 Tempura A – 10 Nori – 5 Sésamo – 5 Nori', 'Maky3.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky3.png')} alt=""/></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 4', '10 Tempura A  10 Tempura B  10 Nori   5 Sésamo  5 Ciboulette', 'Maky4.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky4.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 5', '10 Tempura A – 10 Tempura B – 10 Queso Crema - 10 Nori – 5 Sésamo – 5 Ciboulette', 'Maky5.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky5.png')} alt="" /></div>
         </div>
         <div className='img-container'>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 6', '10 Tempura C – 10 Tempura B – 10 Palta - 10 Nori – 5 Sésamo – 5 Ciboulette', '_Maky_6-min.png')} className='img-menu-home' src={require(`./../../assets/img/home/_Maky_6-min.png`)} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 7', '10 Tempura A – 10 Tempura C – 20 Nori – 10 Sésamo – 10 Ciboulette', '_Maky_7-min.png')} className='img-menu-home' src={require(`./../../assets/img/home/_Maky_7-min.png`)} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Tempura F', 'Champiñones - Pollo - Queso Crema', '_Tempura_Champinion_v2-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Tempura_Champinion_v2-min.png')} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Tempura C', 'Pollo - Queso Crema - Cebollín', '_Tempura_C-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Tempura_C-min.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 6', '10 Tempura C – 10 Tempura B – 10 Palta - 10 Nori – 5 Sésamo – 5 Ciboulette', 'Maky6.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky6.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Maky 7', '10 Tempura A – 10 Tempura C – 20 Nori – 10 Sésamo – 10 Ciboulette', 'Maky7.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky7.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Tempura F', 'Champiñones - Pollo - Queso Crema', 'TempuraCha.png')} className='img-menu-home' src={require('./../../assets/img/home/TempuraCha.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Tempura C', 'Pollo - Queso Crema - Cebollín', 'TempuraC.png')} className='img-menu-home' src={require('./../../assets/img/home/TempuraC.png')} alt="" /></div>
         </div>
         <div className='img-container'>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 30 Fríos', '10 Nori – 10 Sésamo – 10 Ciboulette', '_Promo_30_Frios_v2-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Promo_30_Frios_v2-min.png')} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 30 Fríos', '10 Nori – 10 Sésamo – 10 Ciboulette', '_Promo_30_Frios-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Promo_30_Frios-min.png')} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 50', '20 Tempura A/B – 10 Ciboulette – 10 Sésamo – 10 Nori', '_Promo_50-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Promo_50-min.png')} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Tempuras 60', '30 Tempura A/B/C – 10 Ciboulette – 10 Sésamo – 10 Nori', '_Tempuras_60-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Tempuras_60-min.png')} alt="" /></div>
-        </div>
-        <div className='img-container'>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 30 Fríos', '10 Nori – 10 Sésamo – 10 Ciboulette', '_Promo_30_Frios_v2-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Promo_30_Frios_v2-min.png')} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 30 Fríos', '10 Nori – 10 Sésamo – 10 Ciboulette', '_Promo_30_Frios-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Promo_30_Frios-min.png')} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 50', '20 Tempura A/B – 10 Ciboulette – 10 Sésamo – 10 Nori', '_Promo_50-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Promo_50-min.png')} alt="" /></div>
-          <div className='container-img-individual'><img onClick={() => openModalImg('Tempuras 60', '30 Tempura A/B/C – 10 Ciboulette – 10 Sésamo – 10 Nori', '_Tempuras_60-min.png')} className='img-menu-home' src={require('./../../assets/img/home/_Tempuras_60-min.png')} alt="" /></div>
-        </div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 30 Fríos', '10 Nori – 10 Sésamo – 10 Ciboulette', 'Promo301.png')} className='img-menu-home' src={require('./../../assets/img/home/Promo301.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 30 Fríos', '10 Nori – 10 Sésamo – 10 Ciboulette', 'Promo30.png')} className='img-menu-home' src={require('./../../assets/img/home/Promo30.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Promo 50', '20 Tempura A/B – 10 Ciboulette – 10 Sésamo – 10 Nori', 'Promo50.png')} className='img-menu-home' src={require('./../../assets/img/home/Promo50.png')} alt="" /></div>
+          <div className='container-img-individual'><img onClick={() => openModalImg('Tempuras 60', '30 Tempura A/B/C – 10 Ciboulette – 10 Sésamo – 10 Nori', 'Tempura60.png')} className='img-menu-home' src={require('./../../assets/img/home/Tempura60.png')} alt="" /></div>
+        </div> 
       </div>  
 
       <div className='containerMapaId' id='mapa' >Elemento oculto</div>
