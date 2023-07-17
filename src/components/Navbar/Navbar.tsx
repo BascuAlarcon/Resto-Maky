@@ -30,11 +30,11 @@ const Navbar: React.FC<NavbarInterface> = () => {
   return (
     <>
      <nav className='navbar navbar-expand-lg navbar-dark navbar-modified'> 
-      <Link className="navbar-brand" to="/" onClick={closeNavbarCollapse}>
+      <a className="navbar-brand" href='http://localhost:3000/#inicio' onClick={closeNavbarCollapse}>
         <div className="logo-image ml-4">
               <img src={require('../../assets/img/MAKY_RESTO__SUSHI_transparente.png')} className="img-fluid ml-1" alt='SushiMakyLogo'/>
         </div>
-      </Link>
+      </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon  "></span>
       </button>
@@ -47,10 +47,10 @@ const Navbar: React.FC<NavbarInterface> = () => {
             <Link to="/sucursales" className='nav-link' onClick={closeNavbarCollapse}>{DB_Text.Navbar.mapa}</Link>        
           </li>  */}
           <li className='nav-item'>
-			<a onClick={closeNavbarCollapse} href="#mapa" className='nav-link'>Mapa</a> 
+			<a onClick={closeNavbarCollapse} href="http://localhost:3000/#mapa" className='nav-link'>Mapa</a> 
           </li>  
           <li className='nav-item'>
-			<a onClick={closeNavbarCollapse} href="#galeria" className='nav-link'>Galeria</a> 
+			<a onClick={closeNavbarCollapse} href="http://localhost:3000/#galeria" className='nav-link'>Galeria</a> 
           </li>  
           <li className='nav-item'>
 			{/* <a onClick={handleShow} href="#mapa" className='nav-link'>Contacto</a> */}

@@ -35,7 +35,7 @@ const Footer: React.FC<FooterInterface> = () => {
 						<img src={require('../../assets/img/MAKY_RESTO__SUSHI_transparente.png')} className=" logo-image-footer img-fluid" alt='SushiMakyLogo' />
 					</Link>
 					<div className='container-footer-2  mb-0 '>
-						<a href='https://www.instagram.com/restomaky/' className='disabledAnchorDark mr-1'><FontAwesomeIcon icon={faInstagram} style={{ color: 'red' }} size="2x" className='iconsModal' /></a>
+						<a href='https://www.instagram.com/restomaky/' className='disabledAnchorDark mr-1'><FontAwesomeIcon icon={faInstagram} style={{ color: 'white' }} size="2x" className='iconsModal' /></a>
 						<a href='https://www.facebook.com/sushimakytalca/' className='disabledAnchorDark'><FontAwesomeIcon icon={faFacebook} style={{ color: 'blue' }} size="2x" className='iconsModal' /></a>
 					</div>
 				</div>

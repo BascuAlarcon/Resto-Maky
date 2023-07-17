@@ -6,18 +6,19 @@ import styled from 'styled-components';
 import MapboxMap from '../../components/Map/Mapbox';
 
 const CarouselImg = styled.img` 
-width: 30%;
-height: auto; 
+width: 500px; 
+max-height: 705px;
+height: 40%;
 opacity: 0;
 transition: 1s;
 margin: 10px;
+object-fit: 'fill';
 &.loaded {
   opacity: 1;
 }
 @media screen and (max-width: 980px){
 	width: 100%;
-  margin: 0;
-
+  margin: 0; 
 }
 ` 
 
@@ -36,7 +37,7 @@ function CarouselFadeExample() {
     setLgShow(true);
   }
 
-  const images = ['carousel01.png', 'carousel02.png', 'carousel03.png', 'carousel04.png']
+  const images = ['carousel01.png', 'carousel03.png', 'carousel02.png']
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const [loaded, setLoaded] = useState(false);
@@ -74,6 +75,7 @@ function CarouselFadeExample() {
   return (
     <>
       <div className='container-home mb-2'>
+      <div className='containerInicioId' id='inicio'>Elemento oculto</div>
         <div className="inicioContainer">
           <img className='img-inicio' src={require('../../assets/img/home/portada.png')} /> 
           <img className='img-inicio-mobile' src={require('../../assets/img/home/portada_01.png')} /> 
@@ -113,9 +115,9 @@ function CarouselFadeExample() {
             </div>
             <div className='container-textos-inicio'>
               <p className='texto-titulo-inicio'>Horario de atención</p>
-              <h5 className='texto-sin-margen h5-Default text-dark'>De lunes a Miercoles: 12:45pm - 22:00pm</h5>
-              <h5 className='texto-sin-margen h5-Default text-dark'>De Jueves a Sábado: 12:30pm - 22:30pm</h5>
-              <h5 className='texto-sin-margen h5-Default text-dark'>Domingo: 12:15pm - 22:15pm</h5>
+              <h5 className='texto-sin-margen h5-Default'>De lunes a Miercoles: 12:45pm - 22:00pm</h5>
+              <h5 className='texto-sin-margen h5-Default'>De Jueves a Sábado: 12:30pm - 22:30pm</h5>
+              <h5 className='texto-sin-margen h5-Default'>Domingo: 12:15pm - 22:15pm</h5>
             </div>
             </div>
         </div> 
@@ -129,7 +131,7 @@ function CarouselFadeExample() {
               className={loaded ? "loaded" : ""} 
               onLoad={() => setLoaded(true)}/>  
 
-            <div className="carousel-container-text mt-4" id='galeria'> 
+            <div className="carousel-container-text mt-4"  > 
               <h1 className='titleReseñas'>Nuestras reseñas!</h1>
               <div className="container-comentario"> 
                 <span className='container-star'>
@@ -180,9 +182,9 @@ function CarouselFadeExample() {
           </div> 
         </div>
          
-
+        <div className='containerGaleriaId' id='galeria'>Elemento oculto</div>
         <div className="container-title-inicio-galeria">
-          <h1 className='title-inicio-galeria'>Galería de fotos</h1>
+          <h1 className='title-inicio-galeria mt-3'>Galería de fotos</h1>
         </div>
         <div className='img-container'>
           <div className='container-img-individual'><img onClick={() => openModalImg('Maky 2', '10 Tempura C – 5 Ciboulette – 5 Sésamo – 5 Nori', '_Maky_2-min.JPG')} className='img-menu-home' src={require('../../assets/img/home/_Maky_2-min.JPG')} alt="" /></div>
@@ -210,12 +212,15 @@ function CarouselFadeExample() {
         </div>
       </div>  
 
-      <div className="container-title-inicio-galeria mt-3 mb-2"  >
-          <h1 className='title-inicio-galeria'>Descubre nuestras sucursales!</h1>
-        </div>
-        <div className='containerMap'  id='mapa'>
-          <MapboxMap/>
-        </div>
+      <div className='containerMapaId' id='mapa' >Elemento oculto</div>
+      <div className='container-inicio-sucursales' >
+        <div className="container-title-inicio-galeria mt-2 mb-2"  >
+            <h1 className='title-inicio-galeria title-inicio-sucursales'>Descubre nuestras sucursales!</h1>
+          </div>
+          <div className='containerMap'    >
+            <MapboxMap/>
+          </div>
+      </div>
       
       <Modal 
         show={lgShow}
