@@ -33,7 +33,7 @@ const Footer: React.FC<FooterInterface> = () => {
 					<div className='footer-col-2'>
 						<span>
 							<Link to="" className='footer-col-2'>
-								<img src={require('../../assets/img/MAKY_RESTO__SUSHI_transparente.png')} className=" logo-image-footer img-fluid" alt='SushiMakyLogo' />
+								<img src={require('./../../assets/img/MAKY_RESTO__SUSHI_transparente.png')} className=" logo-image-footer img-fluid" alt='SushiMakyLogo' />
 							</Link>
 						</span> 
 					</div>
