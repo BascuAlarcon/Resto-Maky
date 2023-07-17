@@ -29,7 +29,7 @@ function CarouselFadeExample() {
   const [description, setDescription] = useState('');
   const [imagen, setImagen] = useState('_Maky_2-min.png');
 
-  console.log('prueba 01')
+  console.log('prueba 02')
 
   const openModalImg = (title, description, imagen) => { 
     setTitle(title);
