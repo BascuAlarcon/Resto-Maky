@@ -1,5 +1,6 @@
 {
   "name": "sushimaky_front",
+  "homepage": "https://BascuAlarcon.github.io/Resto-Maky",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -64,6 +65,5 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  },
-  "homepage": "https://BascuAlarcon.github.io/"
+  }
 }
