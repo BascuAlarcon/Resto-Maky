@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Resto-Maky/static/css/main.d6fa7a6f.css",
-    "main.js": "/Resto-Maky/static/js/main.10d10212.js",
+    "main.js": "/Resto-Maky/static/js/main.92fb290c.js",
     "static/media/Carta_SushiMaky.pdf": "/Resto-Maky/static/media/Carta_SushiMaky.a9a769a973609a8e872d.pdf",
     "static/media/vid.mp4": "/Resto-Maky/static/media/vid.2b829ac93a0692e10ee1.mp4",
     "static/media/_Tempura_vegetariano-min.JPG": "/Resto-Maky/static/media/_Tempura_vegetariano-min.af7e58af01920ac976fe.JPG",
@@ -18,12 +18,14 @@
     "static/media/_Maky_6-min.JPG": "/Resto-Maky/static/media/_Maky_6-min.d7525a045deae0a4e4ff.JPG",
     "static/media/_Palta_Salmón-min.JPG": "/Resto-Maky/static/media/_Palta_Salmón-min.da0da0dbde7827b31e4e.JPG",
     "static/media/_Maky_7-min.JPG": "/Resto-Maky/static/media/_Maky_7-min.c5ceebf3a0e72ad263f6.JPG",
-    "static/media/_Maky_2-min.JPG": "/Resto-Maky/static/media/_Maky_2-min.e06fffd053a58110ccb2.JPG",
+    "static/media/_Maky_2-min.png": "/Resto-Maky/static/media/_Maky_2-min.e06fffd053a58110ccb2.png",
     "static/media/_Maky_4-min.JPG": "/Resto-Maky/static/media/_Maky_4-min.7cfd9fcd302c876dbf9c.JPG",
+    "static/media/_Maky_4-min.jpg": "/Resto-Maky/static/media/_Maky_4-min.7cfd9fcd302c876dbf9c.jpg",
     "static/media/carousel04.png": "/Resto-Maky/static/media/carousel04.adcb2760e9162f94ba4f.png",
     "static/media/_Tempura_C-min.JPG": "/Resto-Maky/static/media/_Tempura_C-min.c13766f63e12eb814313.JPG",
     "static/media/_Maky_5_v2-min.JPG": "/Resto-Maky/static/media/_Maky_5_v2-min.de900af9065e1e74893a.JPG",
     "static/media/_Maky_3-min.JPG": "/Resto-Maky/static/media/_Maky_3-min.6e2264653c9fa44db5ac.JPG",
+    "static/media/_Maky_3-min.jpg": "/Resto-Maky/static/media/_Maky_3-min.6e2264653c9fa44db5ac.jpg",
     "static/media/_Promo_50-min.JPG": "/Resto-Maky/static/media/_Promo_50-min.667744cb728791769f1d.JPG",
     "static/media/03_page-0003.jpg": "/Resto-Maky/static/media/03_page-0003.482601c06f97440bdd7d.jpg",
     "static/media/carousel03.png": "/Resto-Maky/static/media/carousel03.6d51c151985cdab8c486.png",
@@ -50,10 +52,10 @@
     "static/media/recortedlogo2.png": "/Resto-Maky/static/media/recortedlogo2.7c3bd9079f6b93e095b6.png",
     "index.html": "/Resto-Maky/index.html",
     "main.d6fa7a6f.css.map": "/Resto-Maky/static/css/main.d6fa7a6f.css.map",
-    "main.10d10212.js.map": "/Resto-Maky/static/js/main.10d10212.js.map"
+    "main.92fb290c.js.map": "/Resto-Maky/static/js/main.92fb290c.js.map"
   },
   "entrypoints": [
     "static/css/main.d6fa7a6f.css",
-    "static/js/main.10d10212.js"
+    "static/js/main.92fb290c.js"
   ]
 }
