@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarInterface> = () => {
   return (
     <>
      <nav className='navbar navbar-expand-lg navbar-dark navbar-modified'> 
-      <a className="navbar-brand" href='http://maky.cl/#inicio' onClick={closeNavbarCollapse}>
+      <a className="navbar-brand" href='https://maky.cl/#inicio' onClick={closeNavbarCollapse}>
         <div className="logo-image ml-4">
               <img src={require('../../assets/img/MAKY_RESTO__SUSHI_transparente.png')} className="img-fluid ml-1" alt='SushiMakyLogo'/>
         </div>
@@ -47,10 +47,10 @@ const Navbar: React.FC<NavbarInterface> = () => {
             <Link to="/sucursales" className='nav-link' onClick={closeNavbarCollapse}>{DB_Text.Navbar.mapa}</Link>        
           </li>  */}
           <li className='nav-item'>
-			<a onClick={closeNavbarCollapse} href="http://maky.cl/#mapa" className='nav-link'>Mapa</a> 
+			<a onClick={closeNavbarCollapse} href="https://maky.cl/#mapa" className='nav-link'>Mapa</a> 
           </li>  
           <li className='nav-item'>
-			<a onClick={closeNavbarCollapse} href="http://maky.cl/#galeria" className='nav-link'>Galeria</a> 
+			<a onClick={closeNavbarCollapse} href="https://maky.cl/#galeria" className='nav-link'>Galeria</a> 
           </li>  
           <li className='nav-item'>
 			{/* <a onClick={handleShow} href="#mapa" className='nav-link'>Contacto</a> */}
