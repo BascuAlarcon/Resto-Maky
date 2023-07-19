@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c9d090da.css",
-    "main.js": "/static/js/main.b82efa83.js",
+    "main.js": "/static/js/main.477527b8.js",
     "static/media/Carta_SushiMaky.pdf": "/static/media/Carta_SushiMaky.a9a769a973609a8e872d.pdf",
     "static/media/vid.mp4": "/static/media/vid.2b829ac93a0692e10ee1.mp4",
     "static/media/_Tempura_vegetariano-min.png": "/static/media/_Tempura_vegetariano-min.af7e58af01920ac976fe.png",
@@ -44,10 +44,10 @@
     "static/media/recortedlogo2.png": "/static/media/recortedlogo2.7c3bd9079f6b93e095b6.png",
     "index.html": "/index.html",
     "main.c9d090da.css.map": "/static/css/main.c9d090da.css.map",
-    "main.b82efa83.js.map": "/static/js/main.b82efa83.js.map"
+    "main.477527b8.js.map": "/static/js/main.477527b8.js.map"
   },
   "entrypoints": [
     "static/css/main.c9d090da.css",
-    "static/js/main.b82efa83.js"
+    "static/js/main.477527b8.js"
   ]
 }
