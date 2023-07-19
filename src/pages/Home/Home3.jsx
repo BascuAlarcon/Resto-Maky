@@ -94,12 +94,12 @@ function CarouselFadeExample() {
 
           <div className="carousel-container-text">
             <div className='container-textos-inicio'>
-              <p className='texto-titulo-inicio'>Lo Mejor Zona Central</p>
-              <p className='texto-sin-margen ml-5 mr-5 '>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+              <p className='texto-titulo-inicio pb-1'>Lo Mejor Zona Central</p>
+              <p className='texto-sin-margen ml-5 mr-5 pb-4'>¡Hemos sido seleccionados y premiados en los Premios UberEats entre más de 10.000 restaurantes a lo largo del país! </p>
             </div>
             <div className='container-textos-inicio'>
-              <p className='texto-titulo-inicio '>Resto Maky</p>
-              <p className='texto-sin-margen ml-5 mr-5 '>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
+              <p className='texto-titulo-inicio pb-1'>Resto Maky</p>
+              <p className='texto-sin-margen ml-5 mr-5 pb-4'>Nos enorgullece profundamente haber representado a nuestra región y ciudad en la categoría "Lo Mejor de la Zona Central". Categoría en  la cual salimos victoriosos, llevándonos el anhelado "pedido de oro", el cual podrás ver en nuestra sucursal centro.</p>
             </div>
             <div className="containerMenuPedidoHome">
               <div className='container-textos-inicio'>
@@ -108,7 +108,7 @@ function CarouselFadeExample() {
                 <button className='btn btn-dark text-white button-inicio'>Ver Carta</button>
               </div>
               <div className='container-textos-inicio'>
-                <p className='texto-titulo-inicio'>Hacer pedidor</p>
+                <p className='texto-titulo-inicio'>Hacer pedido</p>
                 <p className='texto-sin-margen mt-0'>No esperes más y ponte en contacto con nosotros</p>
                 <button className='btn btn-dark text-white button-inicio'>Contacto</button>            
               </div>
@@ -184,7 +184,7 @@ function CarouselFadeExample() {
          
         <div className='containerGaleriaId' id='galeria'>Elemento oculto</div>
         <div className="container-title-inicio-galeria">
-          <h1 className='title-inicio-galeria mt-3'>Galería de fotos</h1>
+          <h1 className='title-inicio-galeria mt-3'>Galeria de fotos</h1>
         </div>
         <div className='img-container'>
           <div className='container-img-individual'><img onClick={() => openModalImg('Maky 2', '10 Tempura C – 5 Ciboulette – 5 Sésamo – 5 Nori', 'Maky2.png')} className='img-menu-home' src={require('./../../assets/img/home/Maky2.png')} alt="" /></div>
