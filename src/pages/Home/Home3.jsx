@@ -115,9 +115,9 @@ function CarouselFadeExample() {
             </div>
             <div className='container-textos-inicio'>
               <p className='texto-titulo-inicio'>Horario de atención</p>
-              <h5 className='texto-sin-margen h5-Default'>De lunes a Miercoles: 12:45pm - 22:00pm</h5>
-              <h5 className='texto-sin-margen h5-Default'>De Jueves a Sábado: 12:30pm - 22:30pm</h5>
-              <h5 className='texto-sin-margen h5-Default'>Domingo: 12:15pm - 22:15pm</h5>
+              <h5 className='texto-sin-margen h5-Default'>De lunes a Miercoles: 12:00pm - 21:00pm</h5>
+              <h5 className='texto-sin-margen h5-Default'>De Jueves a Sábado: 12:00pm - 21:30pm</h5>
+              <h5 className='texto-sin-margen h5-Default'>Domingo: 12:00pm - 21:15pm</h5>
             </div>
             </div>
         </div> 
