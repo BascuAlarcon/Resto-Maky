@@ -26,9 +26,9 @@ const Footer: React.FC<FooterInterface> = () => {
 
 					<div className="container-footer-3 mt-3 mb-0">
 						<h4 className='text-light title-footer-3'>Horario de atención:</h4>
-						<h5 className='h5-Default'>De lunes a Miercoles: 12:45pm - 22:00pm</h5>
-						<h5 className='h5-Default'>De Jueves a Sábado: 12:30pm - 22:30pm</h5>
-						<h5 className='h5-Default'>Domingo: 12:15pm - 22:15pm</h5>
+						<h5 className='h5-Default'>De lunes a Miercoles: 12:00pm - 21:00pm</h5>
+						<h5 className='h5-Default'>De Jueves a Sábado: 12:00pm - 21:30pm</h5>
+						<h5 className='h5-Default'>Domingo: 12:00pm - 21:15pm</h5>
 					</div>
 					<div className='footer-col-2'>
 						<span>
