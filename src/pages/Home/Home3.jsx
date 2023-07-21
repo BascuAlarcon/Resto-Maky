@@ -37,7 +37,7 @@ function CarouselFadeExample() {
     setLgShow(true);
   }
 
-  const images = ['carousel01.png', 'carousel03.png', 'carousel02.png']
+  const images = ['carousel01.png', 'carousel03.png', 'carousel02.png', 'carousel05.png']
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const [loaded, setLoaded] = useState(false);

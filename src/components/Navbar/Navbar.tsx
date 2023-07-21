@@ -81,8 +81,8 @@ const Navbar: React.FC<NavbarInterface> = () => {
 				</Modal.Header>
 				<Modal.Body>
 					<div className='divModalBody'>
-						<a href='https://www.instagram.com/restomaky/' className='disabledAnchorDark mr-1'><FontAwesomeIcon icon={faInstagram} style={{color: 'red'}} size="2x" className='iconsModal'/></a> 
-						<a href='https://www.instagram.com/restomaky/' className='disabledAnchorDark'>{ DB_Text.ModalFooter.Redes_01 }</a>
+						<a href='https://www.instagram.com/makyresto/' className='disabledAnchorDark mr-1'><FontAwesomeIcon icon={faInstagram} style={{color: 'red'}} size="2x" className='iconsModal'/></a> 
+						<a href='https://www.instagram.com/makyresto/' className='disabledAnchorDark'>{ DB_Text.ModalFooter.Redes_01 }</a>
 					</div>
 					<div className='divModalBody'>
 						<a href='https://www.facebook.com/sushimakytalca/' className='disabledAnchorDark'><FontAwesomeIcon icon={faFacebook} style={{color: 'blue'}} size="2x" className='iconsModal'/></a> 
